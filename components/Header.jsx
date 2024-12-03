@@ -19,6 +19,7 @@ function Header() {
           className="w-12 sm:w-16 h-auto cursor-pointer hover:scale-110
             transition-transform duration-100"
         />
+        
         <h1 className="text-2xl md:text-6xl font-semibold text-blue-950 items-center">
           Fisker Ocean
         </h1>
