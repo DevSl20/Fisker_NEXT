@@ -3,12 +3,11 @@
 function Configurator() {
   return (
     <div>
-      <h1 className="text-2xl md:text-3xl font-lightbold text-blue-950">
+      <h1 className="text-2xl md:text-3xl font-semibold text-blue-950">
         Fisker Configurator
       </h1>
       <p className="py-2 text-l font-semibold">
-        Configure your Fisker Ocean, with wide range of exterior and interior
-        features and 3 Wheels option.
+        Customize your own Fisker Ocean!
       </p>
 
       {/* Exterior Colors */}
