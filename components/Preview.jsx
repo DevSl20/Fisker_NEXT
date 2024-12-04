@@ -1,13 +1,12 @@
 import Image from "next/image";
 import configs from "../app/assets/configs.json";
-console.log(configs);
 
 function Preview({
   color = "Black Pearl", // Black Pearl/Red Planet/Sea Grass/Stealth Green/Sun Soaked/Blue Planet
-  interior= "Dark", //dark/white
-  wheel="Vortex" //AeroStealth/SlipStream Black/Vortex
+  interior = "white", //dark/white
+  wheel = "Vortex", //AeroStealth/SlipStream Black/Vortex
 }) {
-  
+  console.log(`images/interior/$(interior).jpeg`);
   return (
     <>
       {/* Exterior Image */}
