@@ -11,12 +11,10 @@ function HomePage() {
     wheel: "Vortex",
   });
 
-
-function updateOptions(options, value) {
-  const newOptions = { ...activeOptions, [options]: value };
-  setActiveOptions(newOptions);
-}
-
+  function updateOptions(options, value) {
+    const newOptions = { ...activeOptions, [options]: value };
+    setActiveOptions(newOptions);
+  }
 
   return (
     <>
@@ -26,7 +24,7 @@ function updateOptions(options, value) {
           <Preview {...activeOptions} />
         </section>
         <aside className="w-full md:w-1/4 bg-red-300 px-3 py-3">
-          <Configurator updateOptions={updateOptions} />
+          <Configurator updateOptions={updateOptions}  {...activeOptions} />
         </aside>
       </main>
     </>

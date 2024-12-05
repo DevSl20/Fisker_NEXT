@@ -6,7 +6,6 @@ function Preview({
   interior = "white", //dark/white
   wheel = "Vortex", //AeroStealth/SlipStream Black/Vortex
 }) {
-  console.log(`images/interior/$(interior).jpeg`);
   return (
     <>
       {/* Exterior Image */}
@@ -26,7 +25,7 @@ function Preview({
 
       {/*Interior Image */}
       <Image
-        src={"/images/dark-fisker.jpeg"}
+        src={`/images/interior/${interior}.jpeg`}
         width="0"
         height="0"
         sizes="100vw"
