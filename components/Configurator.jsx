@@ -78,7 +78,7 @@ function Configurator() {
           {exteriorSwatch.map((color) => (
             <button
               key={color.id}
-              onClick={() => console.log("Exterior Clicked")}
+              onClick={() => console.log(color.name)}
               className={`hover:scale-105 transition-transform duration-100  ${
                 color.id === 0 ? "border-2 border-blue-300 rounded-full" : ""
               }`}
@@ -96,7 +96,7 @@ function Configurator() {
           {interiorSwatch.map((color) => (
             <button
               key={color.id}
-              onClick={() => console.log("Exterior Clicked")}
+              onClick={() => console.log(color.name)}
               className={`hover:scale-105 transition-transform duration-100  ${
                 color.id === 0 ? "border-2 border-blue-300 rounded-full" : ""
               }`}
@@ -114,7 +114,7 @@ function Configurator() {
           {wheelOptions.map((option) => (
             <button
               key={option.id}
-              onClick={() => console.log("Exterior Clicked")}
+              onClick={() => console.log(option.name)}
               className={`hover:scale-105 transition-transform duration-100  ${
                 option.id === 0 ? "border-2 border-blue-300 rounded-full" : ""
               }`}
