@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
           href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css"
         />
       </head>
-      <body>{children}</body>
+      <body> {children} </body>
     </html>
   );
 }
